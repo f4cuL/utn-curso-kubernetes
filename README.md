@@ -66,6 +66,41 @@ y validamos que nuestra app se encuentra expuesta en el puerto 30000 como design
 
 ![image](https://github.com/f4cuL/utn-curso-kubernetes/assets/56969887/87509258-17d4-4578-9bf9-43f8eb6b0edd)
 
+## LoadBalancer
+
+Para iniciar el servicio LoadBalancer debemos ejecutar el comando
+```bash
+  kubectl apply -f loadbalancer.yml
+```
+
+![image](https://github.com/f4cuL/utn-curso-kubernetes/assets/56969887/d218c646-5fb0-4eec-a34c-1bd2eca1c4a6)
+
+ 
+Luego validamos que el servicio se creo correctamente utilizando 
+```bash
+  kubectl get svc loadbalancer-service
+```
+![image](https://github.com/f4cuL/utn-curso-kubernetes/assets/56969887/b7ae87c5-161e-4d76-b548-ed3d75db5602)
+
+
+Utilizaremos curl para acceder a nuestro servidor mediante el uso del NodePort, para posteriormente revisar los logs de los pods y ver si el tráfico fue redirigido de forma equitativa entre los 2 pods
+
+```bash
+  curl localhost:30000
+```
+
+![image](https://github.com/f4cuL/utn-curso-kubernetes/assets/56969887/e1e05385-6d81-419b-a815-8b03e96095f6)
+
+```bash
+  kubectl <nombre del pod> logs
+```
+
+![image](https://github.com/f4cuL/utn-curso-kubernetes/assets/56969887/895fbac5-3dc5-47b7-bc6a-79436823b639)
+
+### Como se puede observar en la imagen, se realizaron 4 llamadas con curl al servidor, y el loadbalancer se encargo de dirigir el tráfico entre ambos pods, por lo que se utilizó 2 veces cada uno.
+
+
+
 
 
 
