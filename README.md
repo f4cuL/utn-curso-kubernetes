@@ -30,7 +30,7 @@ Podremos observar que se generaron dos replicas, por lo cual si eliminamos uno d
 Para utilizar la API debemos posicionarnos sobre alguno de los pods de la siguiente forma
 
 ```bash
-  kubectl exec -it <nombre_del_pod> -- bash
+  kubectl exec -it <"nombre_del_pod"> -- bash
 ```
 
 ![image](https://github.com/f4cuL/utn-curso-kubernetes/assets/56969887/2051c9e3-d569-4e56-894e-773c6ed81f0d)
@@ -38,7 +38,7 @@ Para utilizar la API debemos posicionarnos sobre alguno de los pods de la siguie
 Una vez estamos ubicados en el pod con un bash, como el dockerfile instala en la imagen `curl` podemos utilizarlo dentro del pod de la siguiente forma
 
 ```bash
-  curl <url> (Utilizar los endpoint de la API)
+  curl <"url"> (Utilizar los endpoint de la API)
 ```
 ![image](https://github.com/f4cuL/utn-curso-kubernetes/assets/56969887/7966830a-7e7a-4ccb-ba76-aa1ef537f7d9)
 
@@ -92,7 +92,7 @@ Utilizaremos curl para acceder a nuestro servidor mediante el uso del NodePort, 
 ![image](https://github.com/f4cuL/utn-curso-kubernetes/assets/56969887/e1e05385-6d81-419b-a815-8b03e96095f6)
 
 ```bash
-  kubectl <nombre del pod> logs
+  kubectl <"nombre del pod"> logs
 ```
 
 ![image](https://github.com/f4cuL/utn-curso-kubernetes/assets/56969887/895fbac5-3dc5-47b7-bc6a-79436823b639)
