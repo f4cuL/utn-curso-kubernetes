@@ -4,7 +4,7 @@ Parte 1 del TP de Kubernetes para el curso de Docker - Kubernetes
 
 Para desplegar este proyecto primero se debe colocar en una consola de comandos ubicada sobre el proyecto la siguiente instrucción, 
 ```bash
-  kubectl apply -f .
+  kubectl apply -f deployment.yml
 ```
 ![image](https://github.com/f4cuL/utn-curso-kubernetes/assets/56969887/2bbd31b2-45a6-45cf-b096-0f179b1e3369)
 
