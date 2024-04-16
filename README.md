@@ -41,3 +41,32 @@ Una vez estamos ubicados en el pod con un bash, como el dockerfile instala en la
   curl <url> (Utilizar los endpoint de la API)
 ```
 ![image](https://github.com/f4cuL/utn-curso-kubernetes/assets/56969887/7966830a-7e7a-4ccb-ba76-aa1ef537f7d9)
+
+# Servicios
+## NodePort
+
+Para iniciar el servicio nodeport debemos ejecutar el comando
+```bash
+  kubectl apply -f nodeport.yml
+```
+ 
+Luego validamos que el servicio se creo correctamente utilizando 
+```bash
+  kubectl get svc nodeport-service
+```
+![image](https://github.com/f4cuL/utn-curso-kubernetes/assets/56969887/8b8aff6c-3d8d-441f-ade9-9bb6af374da6)
+
+o
+```bash
+  kubectl get all
+```
+![image](https://github.com/f4cuL/utn-curso-kubernetes/assets/56969887/d4575c06-141a-419e-bf59-87c12e2e10ce)
+
+y validamos que nuestra app se encuentra expuesta en el puerto 30000 como designamos en el yml
+
+![image](https://github.com/f4cuL/utn-curso-kubernetes/assets/56969887/87509258-17d4-4578-9bf9-43f8eb6b0edd)
+
+
+
+
+
