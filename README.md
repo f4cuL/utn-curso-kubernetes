@@ -61,7 +61,9 @@ o
   kubectl get all
 ```
 ![image](https://github.com/f4cuL/utn-curso-kubernetes/assets/56969887/d4575c06-141a-419e-bf59-87c12e2e10ce)
+
 y validamos que nuestra app se encuentra expuesta en el puerto 30000 como designamos en el yml
+
 ![image](https://github.com/f4cuL/utn-curso-kubernetes/assets/56969887/87509258-17d4-4578-9bf9-43f8eb6b0edd)
 
 
