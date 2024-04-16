@@ -1,4 +1,3 @@
-![image](https://github.com/f4cuL/utn-curso-kubernetes/assets/56969887/4172dce5-1c7a-45e3-9b06-2e70385c7f83)![image](https://github.com/f4cuL/utn-curso-kubernetes/assets/56969887/2a621c59-d8d9-43a5-a740-fa4bfedecdc1)# UTN |Curso Docker - Kubernetes
 Parte 1 del TP de Kubernetes para el curso de Docker - Kubernetes
 
 ## Deployment
